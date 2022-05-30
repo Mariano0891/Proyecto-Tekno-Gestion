@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <header class="header">
@@ -45,7 +46,7 @@
     </div>
     <div class="galeria__clientes">
       <div class="columna__clientes">
-        <a href="#"><img src="../Imagenes/Icono Tekno.jpeg" alt="Logo cliente1"></a>
+        <a data-aos="zoom-in" href="#"><img src="../Imagenes/Icono Tekno.jpeg" alt="Logo cliente1"></a>
         <a href="#"><img src="../Imagenes/Icono Tekno.jpeg" alt="Logo cliente2"></a>
       </div>
       <div class="columna__clientes">
@@ -59,13 +60,16 @@
       <div class="columna__clientes">
         <a href="#"><img src="../Imagenes/Icono Tekno.jpeg" alt="Logo cliente7"></a>
         <a href="#"><img src="../Imagenes/Icono Tekno.jpeg" alt="Logo cliente8"></a>  
-      </div>
-   
+      </div>   
     </div>
   </div>
 
   <footer class="footer">
     <h6 class="footer__leyenda">Tekno Software - Todos los derechos reservados</h6>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
