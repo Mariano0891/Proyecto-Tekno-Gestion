@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="icon" type="image/jpeg" href="../Imagenes/Icono Tekno.jpeg">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="../index.html"><img class="header__logoImg" src="../Imagenes/Icono Tekno header.jpg" alt="Logo Tekno"></a>
+      <h1 class="header__titulo">Tekno Software</h1>
+    </div>
+
+    <nav class="header__menu">
+      <ul class="header__lista">
+        <li class="header__item"><a href="../index.html">Inicio</a></li>
+        <li class="header__item"><a href="../Secciones/caracteristicas.html">Características</a>
+          <ul class="header__lista--dos">
+            <li class="header__item--dos"><a href="../Secciones/caracteristicas.html#caracteristica1">Caract.1</a></li>
+            <li class="header__item--dos"><a href="../Secciones/caracteristicas.html#caracteristica2">Caract.2</a></li>
+            <li class="header__item--dos"><a href="../Secciones/caracteristicas.html#caracteristica3">Caract.3</a></li>
+            <li class="header__item--dos"><a href="../Secciones/caracteristicas.html#caracteristica4">Caract.4</a></li>
+          </ul>
+        </li>
+        <li class="header__item"><a href="../Secciones/clientes.html">Clientes</a></li>
+        <li class="header__item"><a href="../Secciones/nosotros.html">Nosotros</a></li>
+        <li class="header__item"><a href="../Secciones/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="titulo__contacto">
+    <h2>Contacto</h2>
+  </div>
+
+  <Form class="formulario__contacto" action="enviar.php" method="get" enctype="text/plain">
+    <div class="input__texto">  
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" id="nombre" required>
+    </div>
+    <div class="input__texto">
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa">
+    </div>
+    <div class="input__texto">
+      <label for="telefono">Telefono</label>
+      <input type="tel" id="telefono">
+    </div>
+    <div class="input__texto">
+      <label for="email">Mail</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="seleccion__sistema">
+      <label for="Sistema">¿Cuenta actualmente con un sistema de gestión?</label>
+      <input type="radio" name="Sistema" value="1">Si
+      <input type="radio" name="Sistema" value="2">No
+    </div>
+    <div class="input__texto">
+      <label for="nombre-sistema">¿Cual?</label>
+      <input type="text" id="nombre-sistema">
+    </div>
+    <div class="input__texto">
+      <label for="Comentarios">Comentarios</label>
+      <textarea name="comentarios" id="comentarios" cols="70" rows="6"></textarea>
+    </div>
+    <div class="seleccion__novedades">
+      <label for="novedades">Deseo recibir información acerca de las novedades</label>
+      <input type="checkbox" id="novedades">
+    </div>
+    <div class="formulario__botones">
+      <input class="boton" type="submit" value="Enviar">
+      <input class="boton" type="reset" value="Borrar todo">
+    </div>
+  </Form>
+  
+  <hr>
+
+  <footer class="footer">
+    <h6 class="footer__leyenda">Tekno Software - Todos los derechos reservados</h6>
+  </footer>
+
+</body>
+</html>
