@@ -305,7 +305,9 @@ section p {
     margin-top: 10%;
     margin-left: 15%;
 }
-
+.columna__clientes img:hover {
+    transform: scale(1.5,1.5);
+}
 
 /* Nosotros */
 
@@ -387,7 +389,7 @@ section p {
 .titulo__contacto {
     font-family: 'Permanent Marker', cursive;
     width: 110px;
-    margin: 25px auto;
+    margin: 10px auto;
 }
 .formulario__contacto {
     width: 500px;
@@ -396,15 +398,32 @@ section p {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Koulen', cursive;
     display: flex;
     flex-flow: column;
+}
+.formulario__contacto label {
+    margin: 5px 0px;
 }
 .formulario__contacto div {
-    margin: 5px;
-    display: flex;
-    flex-flow: column;
+    margin: 2px 0px;
 }
+.botones__formulario {
+    display: flex;
+    justify-content: space-evenly;
+}
+.botones__formulario input{
+    width: 70px;
+    background-color: #5986b3;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    font-family: 'Koulen', cursive;
+}
+.botones__formulario input:hover {
+    background-color: #B3D9FF;
+}
+
 
 
 
