@@ -52,6 +52,7 @@
     border-radius: 5px;
     color: black;
     display: block;
+    transition: all 1s;
 }
 
 .header__item a:hover {
@@ -302,6 +303,7 @@ section p {
 .columna__clientes img{
     width: 60%;
     margin-top: 10%;
+    margin-left: 15%;
 }
 
 
@@ -520,7 +522,7 @@ section p {
     /* MQ clientes */
 
     .columna__clientes img{
-        margin-left: 15%;
+        margin-left: 20%;
     }
 
     /* MQ nosotros */
@@ -655,7 +657,7 @@ section p {
         flex: 50%;
     }
     .columna__clientes img{
-        margin-left: 15%;
+        margin-left: 20%;
     }
 
 
