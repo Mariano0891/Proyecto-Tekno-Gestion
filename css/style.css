@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    font-family: 'Koulen', cursive;
+    font-family: 'Koulen', cursive !important; 
     z-index: 1;   
 }
 
@@ -94,8 +94,12 @@
     "portada"
     "main";
 }
-.portada {
+.container__portada {
     grid-area: portada;
+    margin: 1px;
+}
+.carousel__portada img {
+    height: 400px;
 }
 .portada__imagen {
     width: 100%;
@@ -105,7 +109,7 @@
     grid-area: main;
 }
 .main__titulo {
-    width: 200px;
+    width: 250px;
     margin: 25px auto;
     font-family: 'Permanent Marker', cursive;
 }
@@ -436,7 +440,7 @@ section p {
         flex-direction: column;
     }
 
-        /* MQ index */
+    /* MQ index */
     .portada__imagen {
         padding: 2px 15%;
     }
@@ -555,6 +559,10 @@ section p {
     }
     .section__descripcion {
         font-size: 2.5vw;
+    }
+    /* MQ contacto */
+    .formulario__contacto {
+        width: 470px;
     }
 }
 @media (max-width: 500px) {
@@ -692,5 +700,7 @@ section p {
     .section__descripcion {
         font-size: 2.5vw;
     }
+    .formulario__contacto {
+        width: 400px;
+    }
 }
-

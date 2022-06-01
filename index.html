@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
 </head>
 <body>
   <header class="header">
@@ -37,10 +39,32 @@
   </header>
 
   <div class="container__index">
-    <div class="portada">
-      <img class="portada__imagen" src="./Imagenes/WhatsApp Image 2022-05-10 at 12.24.17 PM.jpeg" alt="Imagen oficina"><!-- Esta imagen despues sera reemplazada por un video o un carrusel de imagenes con bootstrap -->
+<!--<div class="portada">
+      <img class="portada__imagen" src="./Imagenes/WhatsApp Image 2022-05-10 at 12.24.17 PM.jpeg" alt="Imagen oficina">
+    </div> -->
+    <div class="container container__portada">
+      <div id="carouselExampleControls" class="carousel slide carousel__portada" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Imagenes/Oficina-minimalista.jpg" class="d-block w-100" alt="Oficina 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/Almacenes-Bodegas-Depositos.jpg" class="d-block w-100" alt="Deposito">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/WhatsApp Image 2022-05-10 at 12.24.17 PM - redimensionada.jpeg" class="d-block w-100" alt="Oficina 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-  
     <main class="main">
       <h2 class="main__titulo">¿Que es Tekno?</h2>
       <p class="main__contenido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque ipsa tempora nisi possimus magni ex beatae voluptate corrupti reiciendis facilis libero modi nulla quam expedita architecto eum ratione qui debitis dolores earum, sequi ut! Aperiam iure odio ullam eum? Illum perferendis laborum harum repellat accusamus, doloribus tenetur voluptatibus sint provident qui. Cum eos distinctio a dolore impedit, dolor iste sequi vel repudiandae sint facere ab ipsam vitae soluta facilis nihil quisquam recusandae placeat quas repellendus rerum velit quae accusamus! Odio asperiores dignissimos alias consequatur magnam? Odit deleniti maiores voluptatum harum, aperiam soluta cupiditate sit nesciunt deserunt eum suscipit consequuntur nemo odio et fugiat delectus error pariatur quas eligendi aspernatur? Repudiandae quo dolorem sed aperiam laboriosam excepturi in itaque, consequuntur sint. Incidunt non alias rem minus quis ipsa neque quod quibusdam ad beatae repudiandae impedit eaque itaque deleniti laudantium possimus cupiditate iusto esse at consectetur numquam, quia sapiente vero. Laboriosam illo non itaque laudantium excepturi, provident neque consequuntur facere cupiditate fugit optio et vel saepe magnam veniam nobis maiores dolor. Minus totam quas numquam illo ex placeat vel libero maiores. Dolores, inventore accusamus odio voluptates, ut cupiditate, sapiente iste officia consequuntur tempora at recusandae corrupti suscipit et maiores minus alias voluptatibus obcaecati non facere. Architecto voluptatibus laboriosam inventore sit harum, perspiciatis dolores in voluptas quaerat pariatur aliquam veritatis omnis qui alias incidunt libero eos recusandae nihil ab expedita asperiores quis necessitatibus! Minus necessitatibus, rem placeat esse vero laborum doloremque, magni dolorum non quam veniam. Nam earum eos cupiditate recusandae dolor, facere atque est ad? Sequi excepturi, nihil molestiae eligendi id exercitationem facere quos cumque enim ut repudiandae maiores consequuntur debitis ullam, quo voluptate illum! In nesciunt fuga magni. Exercitationem, fuga. Vero aut facilis facere! Temporibus sint optio a nulla voluptas in, architecto atque doloremque nemo aut magnam soluta numquam beatae.</p>
@@ -49,6 +73,7 @@
   <footer class="footer">
     <h6 class="footer__leyenda">Tekno Software - Todos los derechos reservados</h6>
   </footer>
-   
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
 </body>
 </html>
