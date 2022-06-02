@@ -32,6 +32,7 @@
     font-size: 40px;
     color: #FFD999;
     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    margin-top: 15px;
 }
 
 .header__lista {
@@ -68,7 +69,7 @@
 .header__item--dos {
     margin-top: 1px;
     width: 100px;
-    margin-left: 5px;
+    margin-left: -22px;
     text-align: center;
 }
 
@@ -298,7 +299,7 @@ section p {
     padding: 5px;
     flex-wrap: wrap;
     max-width: 900px;
-    margin: 10px auto;
+    margin: 10px auto 30px auto;
     justify-content: space-between;
 }
 .columna__clientes {
