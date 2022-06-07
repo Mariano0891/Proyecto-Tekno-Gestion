@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    font-family: 'Koulen', cursive !important; 
+    font-family: 'Koulen', cursive; 
     z-index: 1;   
 }
 
@@ -172,7 +172,7 @@
 .caracteristica1__imagen {
     grid-area: imagen1;
     height: auto;
-    width: 40vw;
+    width: 50vw;
     padding: 10px;
 }
 /* bloque 2 */
@@ -203,7 +203,7 @@
 }
 .caracteristica2__imagen {
     grid-area: imagen2;
-    width: 45vw;
+    width: 50vw;
     height: auto;
     padding: 10px;
 }
@@ -215,7 +215,7 @@
     grid-template-areas:
         "titulo3 imagen3"
         "descripcion3 imagen3";
-    grid-template-rows: 80px auto;
+    grid-template-rows: 60px auto;
     margin: 30px;
     justify-items: center;
     align-items: center;
@@ -237,7 +237,7 @@
 .caracteristica3__imagen {
     grid-area: imagen3;
     height: auto;
-    width: 40vw;
+    width: 50vw;
     padding: 10px;
 }
 
@@ -248,7 +248,7 @@
     grid-template-areas:
         "imagen4 titulo4"
         "imagen4 descripcion4";
-    grid-template-rows: 80px auto;
+    grid-template-rows: 60px auto;
     margin: 30px;
     justify-items: center;
     align-items: center;
@@ -269,7 +269,7 @@
 }
 .caracteristica4__imagen {
     grid-area: imagen4;
-    width: 45vw;
+    width: 50vw;
     height: auto;
     padding: 10px;
 }
@@ -279,6 +279,7 @@ section h3 {
 }
 section p {
     font-family: 'Permanent Marker', cursive;
+    font-size: .9rem;
 }
 
 /* Clientes */
@@ -310,8 +311,27 @@ section p {
     margin-top: 10%;
     margin-left: 15%;
 }
-.columna__clientes img:hover {
+.columna__clientes .cliente:hover {
     transform: scale(1.5,1.5);
+}
+
+.cliente {
+    position: relative;
+}
+.cliente__info {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0px;
+    bottom: 20%;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 15%;
+    color: #FFD999;
+    font-family: 'Koulen', cursive;
+    display: none;
+}
+.columna__clientes .cliente:hover .cliente__info{
+    display: block;
 }
 
 /* Nosotros */
@@ -472,7 +492,7 @@ section p {
     }
     .caracteristica1__imagen {
         grid-area: imagen1;
-        width: 60vw;
+        width: 70vw;
     }
     /* bloque 2 */
     .caracteristica2 {
@@ -494,7 +514,7 @@ section p {
     }
     .caracteristica2__imagen {
         grid-area: imagen2;
-        width: 60vw;
+        width: 70vw;
     }
     /* bloque 3 */
     .caracteristica3 {
@@ -516,7 +536,7 @@ section p {
     }
     .caracteristica3__imagen {
         grid-area: imagen3;
-        width: 60vw;
+        width: 70vw;
     }
 
 
@@ -540,7 +560,7 @@ section p {
     }
     .caracteristica4__imagen {
         grid-area: imagen4;
-        width: 60vw;
+        width: 70vw;
     }
 
     /* MQ clientes */
@@ -608,7 +628,7 @@ section p {
     }
     .caracteristica1__imagen {
         grid-area: imagen1;
-        width: 60vw;
+        width: 80vw;
     }
     /* bloque 2 */
     .caracteristica2 {
@@ -630,7 +650,7 @@ section p {
     }
     .caracteristica2__imagen {
         grid-area: imagen2;
-        width: 60vw;
+        width: 80vw;
     }
     /* bloque 3 */
     .caracteristica3 {
@@ -652,7 +672,7 @@ section p {
     }
     .caracteristica3__imagen {
         grid-area: imagen3;
-        width: 60vw;
+        width: 80vw;
     }
 
 
@@ -676,7 +696,7 @@ section p {
     }
     .caracteristica4__imagen {
         grid-area: imagen4;
-        width: 60vw;
+        width: 80vw;
     }
 
     /* MQ clientes */
@@ -684,7 +704,7 @@ section p {
     .columna__clientes {
         flex: 50%;
     }
-    .columna__clientes img{
+    .columna__clientes .cliente{
         margin-left: 20%;
     }
 
@@ -695,12 +715,15 @@ section p {
         grid-template-areas: 
         "imagenes"
         "descripcion";
+        grid-template-columns: 98%;
         align-items: center;
         justify-content: center;
     }
     .section__descripcion {
-        font-size: 2.5vw;
+        font-size: .9rem;
     }
+
+    /* MQ contacto */
     .formulario__contacto {
         width: 400px;
     }
