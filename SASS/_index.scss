@@ -1,0 +1,32 @@
+.container__index {
+    display: grid;
+    grid-template-areas: 
+    "portada"
+    "main";
+    & .container__portada {
+        grid-area: portada;
+        margin: 1px auto;
+        & .carousel__portada {
+            & img {
+                height: 400px;
+            }
+        }
+    }
+    & .main {
+        grid-area: main;
+        font-family: $fontFamilyCuerpo;
+        & .main__titulo {
+            width: 250px;
+            margin: 25px auto;
+        }
+        & .main__contenido {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0px auto 10px auto;
+            padding: 15px;
+            background: $colorComplementario;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px;
+        }
+    }
+}

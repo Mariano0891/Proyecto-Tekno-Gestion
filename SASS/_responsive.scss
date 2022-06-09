@@ -1,0 +1,41 @@
+@media (min-width: 501px) and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .main {
+        & .main__titulo {
+            width: 28vw;
+            font-size: 3vw;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        & .header__logo {
+            &.header__titulo {
+                display: none;
+            }
+        }
+        & &__menu {
+            & .header__lista {
+                & .header__item {
+                    & a {
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        & .main__titulo {
+            width: 40vw;
+            font-size: 4.5vw;
+        }
+        .main__contenido {
+            font-size: 3vw;
+        }
+    }
+}
+

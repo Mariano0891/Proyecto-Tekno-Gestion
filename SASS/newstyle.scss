@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$colorPrincipal: #5986b3;
+$colorComplementario: #FFD999;
+$fontFamilyTitulos: 'Koulen', cursive;
+$fontFamilyCuerpo: 'Permanent Marker', cursive;
+@import "index";
+@import "responsive";
+
+.header {
+    background-color: $colorPrincipal;
+    min-height: 60px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: $fontFamilyTitulos;
+    z-index: 1;
+
+    & &__logo {
+        display: flex;
+        align-items: center;
+        & .header__logoImg {
+            height: 45px;
+            margin-right: 15px;
+        }
+        & .header__titulo {
+            font-size: 40px;
+            color: $colorComplementario;
+            text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+            margin-top: 15px;
+        }
+    }
+    & &__menu {
+        & .header__lista {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            & .header__item {
+                display: inline-block;
+                & a {
+                    margin: 0 5px;
+                    padding: 0px 5px;
+                    text-decoration: none;
+                    background-color: $colorComplementario;
+                    border-radius: 5px;
+                    color: #000;
+                    display: block;
+                    transition: all 1s;
+                    &:hover {
+                        background-color: #000;
+                        color: $colorComplementario;
+                    }
+                }
+                & .header__lista--dos {
+                    list-style: none;
+                    display: none;
+                    position:absolute;
+                    & .header__item--dos {
+                        margin-top: 1px;
+                        width: 100px;
+                        margin-left: -22px;
+                        text-align: center;
+                    }
+                }
+                &:hover .header__lista--dos {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.footer {
+    background-color: $colorPrincipal;
+    font-family: $fontFamilyTitulos;
+    text-align: right;
+    margin-top: 10px;
+    & &__leyenda {
+        padding: 5px;
+    }
+}
