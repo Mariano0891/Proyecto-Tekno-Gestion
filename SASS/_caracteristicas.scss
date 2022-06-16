@@ -1,0 +1,128 @@
+.container__caracteristicas {
+    display: grid;
+    grid-template-areas: 
+        "titulo"
+        "caracteristica1"
+        "caracteristica2"
+        "caracteristica3"
+        "caracteristica4";
+    justify-items: center;
+    & .titulo__caracteristicas {
+        grid-area: titulo;
+        font-family: $fontFamilyCuerpo;
+        margin-top: 10px;
+    }
+    & section {
+        display: grid;
+        grid-template-rows: 60px auto;
+        margin: 30px;
+        justify-items: center;
+        align-items: center;
+        font-family: $fontFamilyCuerpo;
+    }
+    & .caracteristica1 {
+        @extend section;
+        grid-area: caracteristica1;
+        grid-template-areas:
+        "titulo1 imagen1"
+        "descripcion1 imagen1";
+        & .caracteristica1__titulo {
+            grid-area: titulo1;
+            @include titulos;
+        }
+        & .caracteristica1__descripcion {
+            grid-area: descripcion1;
+            padding: 10px;
+            background: map-get($coloresCaracteristicas, complementario);
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: -5px 5px 10px;
+        }
+        & .caracteristica1__imagen {
+            grid-area: imagen1;
+            height: auto;
+            width: 50vw;
+            padding: 10px;
+        }
+    }
+    & .caracteristica2 {
+        @extend section;
+        grid-area: caracteristica2;
+        grid-template-areas: 
+        "imagen2 titulo2"
+        "imagen2 descripcion2";
+        & .caracteristica2__titulo {
+            grid-area: titulo2;
+            @include titulos;
+        }
+        & .caracteristica2__descripcion {
+            grid-area: descripcion2;
+            padding: 10px;
+            background: map-get($coloresCaracteristicas, complementario);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 5px 5px 10px;
+        }
+        & .caracteristica2__imagen {
+            grid-area: imagen2;
+            width: 50vw;
+            height: auto;
+            padding: 10px;
+        }
+    }
+    & .caracteristica3 {
+        @extend section;
+        grid-area: caracteristica3;
+        grid-template-areas: 
+        "titulo3 imagen3"
+        "descripcion3 imagen3";
+        & .caracteristica3__titulo {
+            grid-area: titulo3;
+            @include titulos;
+        }
+        & .caracteristica3__descripcion {
+            grid-area: descripcion3;
+            padding: 10px;
+            background: map-get($coloresCaracteristicas, complementario);
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: -5px 5px 10px;
+        }
+        & .caracteristica3__imagen {
+            grid-area: imagen3;
+            height: auto;
+            width: 50vw;
+            padding: 10px;
+        }
+    }
+    & .caracteristica4 {
+        @extend section;
+        grid-area: caracteristica4;
+        grid-template-areas: 
+        "imagen4 titulo4"
+        "imagen4 descripcion4";
+        & .caracteristica4__titulo {
+            grid-area: titulo4;
+            @include titulos;
+        }
+        & .caracteristica4__descripcion {
+            grid-area: descripcion4;
+            padding: 10px;
+            background: map-get($coloresCaracteristicas, complementario);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 5px 5px 10px;
+        }
+        & .caracteristica4__imagen {
+            grid-area: imagen4;
+            width: 50vw;
+            height: auto;
+            padding: 10px;
+        }
+    }
+
+}

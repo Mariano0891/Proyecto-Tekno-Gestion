@@ -3,12 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+$coloresCaracteristicas: (
+    principal: #5986b3,
+    complementario: #FFD999,
+    titulos: #B3D9FF,
+);
+@mixin titulos {
+    padding: 10px;
+    background: map-get($coloresCaracteristicas, titulos);
+}
+
 $colorPrincipal: #5986b3;
 $colorComplementario: #FFD999;
 $fontFamilyTitulos: 'Koulen', cursive;
 $fontFamilyCuerpo: 'Permanent Marker', cursive;
 @import "index";
+@import "caracteristicas";
 @import "responsive";
+
 
 .header {
     background-color: $colorPrincipal;
