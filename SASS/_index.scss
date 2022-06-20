@@ -3,6 +3,7 @@
     grid-template-areas: 
     "portada"
     "main";
+    background: $colorPagina;
     & .container__portada {
         grid-area: portada;
         margin: 1px auto;
@@ -18,6 +19,8 @@
         & .main__titulo {
             width: 250px;
             margin: 25px auto;
+            color: $colorComplementario;
+            text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
         }
         & .main__contenido {
             width: 90%;

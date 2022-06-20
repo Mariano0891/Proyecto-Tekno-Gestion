@@ -4,17 +4,19 @@
     box-sizing: border-box;
 }
 $coloresCaracteristicas: (
-    principal: #5986b3,
-    complementario: #FFD999,
-    titulos: #B3D9FF,
+    principal: #1B262C,
+    complementario: #BBE1FA,
+    pagina: #0F4C75,
 );
 @mixin titulos {
     padding: 10px;
-    background: map-get($coloresCaracteristicas, titulos);
+    color: map-get($coloresCaracteristicas, complementario);
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
 }
 
-$colorPrincipal: #5986b3;
-$colorComplementario: #FFD999;
+$colorPrincipal: #1B262C;
+$colorComplementario: #BBE1FA;
+$colorPagina: #0F4C75;
 $fontFamilyTitulos: 'Koulen', cursive;
 $fontFamilyCuerpo: 'Permanent Marker', cursive;
 @import "index";
@@ -59,14 +61,15 @@ $fontFamilyCuerpo: 'Permanent Marker', cursive;
                     margin: 0 5px;
                     padding: 0px 5px;
                     text-decoration: none;
-                    background-color: $colorComplementario;
+                    background-color: $colorPrincipal;
                     border-radius: 5px;
-                    color: #000;
+                    color: $colorComplementario;
+                    border: solid 1px $colorComplementario;
                     display: block;
                     transition: all 1s;
                     &:hover {
-                        background-color: #000;
-                        color: $colorComplementario;
+                        background-color: $colorComplementario;
+                        color: $colorPrincipal;
                     }
                 }
                 & .header__lista--dos {
@@ -88,10 +91,11 @@ $fontFamilyCuerpo: 'Permanent Marker', cursive;
     }
 }
 .footer {
-    background-color: $colorPrincipal;
+    background: $colorPrincipal;
+    color: $colorComplementario;
     font-family: $fontFamilyTitulos;
     text-align: right;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     & &__leyenda {
         padding: 5px;
     }

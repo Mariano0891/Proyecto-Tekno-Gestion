@@ -7,9 +7,12 @@
         "caracteristica3"
         "caracteristica4";
     justify-items: center;
+    background: $colorPagina;
     & .titulo__caracteristicas {
         grid-area: titulo;
         font-family: $fontFamilyCuerpo;
+        color: $colorComplementario;
+        text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
         margin-top: 10px;
     }
     & section {
