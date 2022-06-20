@@ -22,7 +22,7 @@ $fontFamilyCuerpo: 'Permanent Marker', cursive;
 @import "index";
 @import "caracteristicas";
 @import "responsive";
-
+@import "clientes";
 
 .header {
     background-color: $colorPrincipal;
@@ -70,6 +70,7 @@ $fontFamilyCuerpo: 'Permanent Marker', cursive;
                     &:hover {
                         background-color: $colorComplementario;
                         color: $colorPrincipal;
+                        border: solid 1px $colorPrincipal;
                     }
                 }
                 & .header__lista--dos {

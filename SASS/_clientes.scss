@@ -1,0 +1,54 @@
+.container__clientes {
+    background: $colorPagina;
+    & .titulo__clientes {
+        @include titulos;
+        font-family: $fontFamilyCuerpo;
+        width: 110px;
+        margin: 0 auto;
+    }
+    & .descripcion__clientes {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10;
+        font-family: $fontFamilyCuerpo;
+        color: $colorComplementario;    
+    }
+    & .galeria__clientes {
+        display: flex;
+        padding: 5px 5px 30px 5px;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 10px auto 0 auto;
+        justify-content: space-between;
+        & .columna__clientes {
+            flex: 25%;
+            & img {
+                width: 60%;
+                margin-top: 10%;
+                margin-left: 15%;
+            }
+            & .cliente:hover {
+                transform: scale(1.2,1.2);
+            }
+            & .cliente {
+                position: relative;
+                & .cliente__info {
+                    background: rgba(0,0,0,0.7);
+                    position: absolute;
+                    left: 0px;
+                    bottom: 20%;
+                    width: 60%;
+                    margin-top: 10%;
+                    margin-left: 15%;
+                    padding-top: 5%;
+                    color: $colorComplementario;
+                    font-family: $fontFamilyTitulos;
+                    display: none;
+                }
+                &:hover .cliente__info{
+                    display: block;
+                }
+            }
+        }
+    }
+}

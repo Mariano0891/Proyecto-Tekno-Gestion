@@ -322,6 +322,80 @@
   }
 }
 
+.container__clientes {
+  background: #0F4C75;
+}
+
+.container__clientes .titulo__clientes {
+  padding: 10px;
+  color: #BBE1FA;
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  font-family: "Permanent Marker", cursive;
+  width: 110px;
+  margin: 0 auto;
+}
+
+.container__clientes .descripcion__clientes {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10;
+  font-family: "Permanent Marker", cursive;
+  color: #BBE1FA;
+}
+
+.container__clientes .galeria__clientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px 30px 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 900px;
+  margin: 10px auto 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__clientes .galeria__clientes .columna__clientes {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+.container__clientes .galeria__clientes .columna__clientes img {
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.container__clientes .galeria__clientes .columna__clientes .cliente:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.container__clientes .galeria__clientes .columna__clientes .cliente {
+  position: relative;
+}
+
+.container__clientes .galeria__clientes .columna__clientes .cliente .cliente__info {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0px;
+  bottom: 20%;
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 15%;
+  padding-top: 5%;
+  color: #BBE1FA;
+  font-family: "Koulen", cursive;
+  display: none;
+}
+
+.container__clientes .galeria__clientes .columna__clientes .cliente:hover .cliente__info {
+  display: block;
+}
+
 .header {
   background-color: #1B262C;
   min-height: 60px;
@@ -389,6 +463,7 @@
 .header .header__menu .header__lista .header__item a:hover {
   background-color: #BBE1FA;
   color: #1B262C;
+  border: solid 1px #1B262C;
 }
 
 .header .header__menu .header__lista .header__item .header__lista--dos {
