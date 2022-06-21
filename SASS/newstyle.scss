@@ -21,8 +21,10 @@ $fontFamilyTitulos: 'Koulen', cursive;
 $fontFamilyCuerpo: 'Permanent Marker', cursive;
 @import "index";
 @import "caracteristicas";
-@import "responsive";
 @import "clientes";
+@import "nosotros";
+@import "contacto";
+@import "responsive";
 
 .header {
     background-color: $colorPrincipal;

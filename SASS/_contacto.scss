@@ -1,0 +1,43 @@
+.container__contacto {
+    background: $colorPagina; 
+    & .titulo__contacto {
+        @include titulos;
+        font-family: $fontFamilyCuerpo;
+        width: 110px;
+        margin: 0 auto;
+    }
+    & .formulario__contacto {
+        width: 500px;
+        margin: 0 auto;
+        background: $colorComplementario;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        font-family: $fontFamilyTitulos;
+        display: flex;
+        flex-flow: column;
+        & label {
+            margin: 5px 0px;
+        }
+        & div {
+            margin: 2px 0px;
+        }
+        & .botones__formulario {
+            display: flex;
+            justify-content: space-evenly;
+            & input {
+                width: 70px;
+                background-color: $colorPrincipal;
+                border-radius: 5px;
+                padding: 10px;
+                border: none;
+                color: $colorComplementario;
+            }
+            & input:hover {
+                background: $colorComplementario;
+                color: $colorPrincipal;
+                border: solid 1px $colorPrincipal;
+            }
+        }
+    }
+}

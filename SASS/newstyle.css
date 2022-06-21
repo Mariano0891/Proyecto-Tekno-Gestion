@@ -235,93 +235,6 @@
   padding: 10px;
 }
 
-@media (min-width: 501px) and (max-width: 768px) {
-  .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main .main__titulo {
-    width: 28vw;
-    font-size: 3vw;
-  }
-  /* MQ Caracteristicas */
-  .container__caracteristicas .caracteristica1 {
-        grid-template-areas: "titulo1" "imagen1" "descripcion1";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica1 .caracteristica1__imagen {
-    width: 70vw;
-  }
-  .container__caracteristicas .caracteristica2 {
-        grid-template-areas: "titulo2" "imagen2" "descripcion2";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica2 .caracteristica2__imagen {
-    width: 70vw;
-  }
-  .container__caracteristicas .caracteristica3 {
-        grid-template-areas: "titulo3" "imagen3" "descripcion3";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica3 .caracteristica3__imagen {
-    width: 70vw;
-  }
-  .container__caracteristicas .caracteristica4 {
-        grid-template-areas: "titulo4" "imagen4" "descripcion4";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica4 .caracteristica4__imagen {
-    width: 70vw;
-  }
-}
-
-@media (max-width: 500px) {
-  .header .header__logo .header__titulo {
-    display: none;
-  }
-  .header .header__menu .header__lista .header__item a {
-    font-size: 2.5vw;
-  }
-  .main .main__titulo {
-    width: 40vw;
-    font-size: 4.5vw;
-  }
-  .main .main__contenido {
-    font-size: 3vw;
-  }
-  /* MQ Caracteristicas */
-  .container__caracteristicas .caracteristica1 {
-        grid-template-areas: "titulo1" "imagen1" "descripcion1";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica1 .caracteristica1__imagen {
-    width: 80vw;
-  }
-  .container__caracteristicas .caracteristica2 {
-        grid-template-areas: "titulo2" "imagen2" "descripcion2";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica2 .caracteristica2__imagen {
-    width: 80vw;
-  }
-  .container__caracteristicas .caracteristica3 {
-        grid-template-areas: "titulo3" "imagen3" "descripcion3";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica3 .caracteristica3__imagen {
-    width: 80vw;
-  }
-  .container__caracteristicas .caracteristica4 {
-        grid-template-areas: "titulo4" "imagen4" "descripcion4";
-    margin: 10px;
-  }
-  .container__caracteristicas .caracteristica4 .caracteristica4__imagen {
-    width: 80vw;
-  }
-}
-
 .container__clientes {
   background: #0F4C75;
 }
@@ -394,6 +307,313 @@
 
 .container__clientes .galeria__clientes .columna__clientes .cliente:hover .cliente__info {
   display: block;
+}
+
+.container__nosotros {
+  background: #0F4C75;
+}
+
+.container__nosotros .titulo__nosotros {
+  padding: 10px;
+  color: #BBE1FA;
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  font-family: "Permanent Marker", cursive;
+  width: 110px;
+  margin: 0 auto;
+}
+
+.container__nosotros .section__nosotros {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "imagenes descripcion";
+  -ms-grid-columns: 500px auto;
+      grid-template-columns: 500px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__nosotros .section__nosotros .section__imagenes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagenes;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+}
+
+.container__nosotros .section__nosotros .section__imagenes ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__slider {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  height: 300px;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__slider .section__slider--img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__slider .section__slider--img img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__slider .section__slider--img:first-child {
+  opacity: 1;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__slider .section__slider--img:target {
+  opacity: 1;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__menu {
+  text-align: center;
+  margin: 5px;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__menu .section__item {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__nosotros .section__nosotros .section__imagenes .section__menu .section__item img {
+  width: 70px;
+  height: 50px;
+  padding: 10px;
+}
+
+.container__nosotros .section__nosotros .section__descripcion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: descripcion;
+  font-size: 1.4vw;
+  margin: 10px;
+  padding: 10px;
+  background: #BBE1FA;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.container__contacto {
+  background: #0F4C75;
+}
+
+.container__contacto .titulo__contacto {
+  padding: 10px;
+  color: #BBE1FA;
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  font-family: "Permanent Marker", cursive;
+  width: 110px;
+  margin: 0 auto;
+}
+
+.container__contacto .formulario__contacto {
+  width: 500px;
+  margin: 0 auto;
+  background: #BBE1FA;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+  font-family: "Koulen", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.container__contacto .formulario__contacto label {
+  margin: 5px 0px;
+}
+
+.container__contacto .formulario__contacto div {
+  margin: 2px 0px;
+}
+
+.container__contacto .formulario__contacto .botones__formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container__contacto .formulario__contacto .botones__formulario input {
+  width: 70px;
+  background-color: #1B262C;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  color: #BBE1FA;
+}
+
+.container__contacto .formulario__contacto .botones__formulario input:hover {
+  background: #BBE1FA;
+  color: #1B262C;
+  border: solid 1px #1B262C;
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .main__titulo {
+    width: 28vw;
+    font-size: 3vw;
+  }
+  /* MQ Caracteristicas */
+  .container__caracteristicas .caracteristica1 {
+        grid-template-areas: "titulo1" "imagen1" "descripcion1";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica1 .caracteristica1__imagen {
+    width: 70vw;
+  }
+  .container__caracteristicas .caracteristica2 {
+        grid-template-areas: "titulo2" "imagen2" "descripcion2";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica2 .caracteristica2__imagen {
+    width: 70vw;
+  }
+  .container__caracteristicas .caracteristica3 {
+        grid-template-areas: "titulo3" "imagen3" "descripcion3";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica3 .caracteristica3__imagen {
+    width: 70vw;
+  }
+  .container__caracteristicas .caracteristica4 {
+        grid-template-areas: "titulo4" "imagen4" "descripcion4";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica4 .caracteristica4__imagen {
+    width: 70vw;
+  }
+  /* MQ Clientes */
+  .container__clientes .galeria__clientes .columna__clientes img {
+    margin-left: 20%;
+  }
+  /* MQ Nosotros */
+  .container__nosotros .section__nosotros {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "imagenes" "descripcion";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__nosotros .section__nosotros .section__descripcion {
+    font-size: 2.5vw;
+  }
+  /* MQ Contacto */
+  .container__contacto .formulario__contacto {
+    width: 470px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .header__logo .header__titulo {
+    display: none;
+  }
+  .header .header__menu .header__lista .header__item a {
+    font-size: 2.5vw;
+  }
+  .main .main__titulo {
+    width: 40vw;
+    font-size: 4.5vw;
+  }
+  .main .main__contenido {
+    font-size: 3vw;
+  }
+  /* MQ Caracteristicas */
+  .container__caracteristicas .caracteristica1 {
+        grid-template-areas: "titulo1" "imagen1" "descripcion1";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica1 .caracteristica1__imagen {
+    width: 80vw;
+  }
+  .container__caracteristicas .caracteristica2 {
+        grid-template-areas: "titulo2" "imagen2" "descripcion2";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica2 .caracteristica2__imagen {
+    width: 80vw;
+  }
+  .container__caracteristicas .caracteristica3 {
+        grid-template-areas: "titulo3" "imagen3" "descripcion3";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica3 .caracteristica3__imagen {
+    width: 80vw;
+  }
+  .container__caracteristicas .caracteristica4 {
+        grid-template-areas: "titulo4" "imagen4" "descripcion4";
+    margin: 10px;
+  }
+  .container__caracteristicas .caracteristica4 .caracteristica4__imagen {
+    width: 80vw;
+  }
+  /* MQ Clientes */
+  .container__clientes .galeria__clientes .columna__clientes {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .container__clientes .galeria__clientes .columna__clientes .cliente {
+    margin-left: 20%;
+  }
+  /* MQ Nosotros */
+  .container__nosotros .section__nosotros {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "imagenes" "descripcion";
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__nosotros .section__nosotros .section__descripcion {
+    font-size: .9rem;
+  }
+  /* MQ Contacto */
+  .container__contacto .formulario__contacto {
+    width: 400px;
+  }
 }
 
 .header {

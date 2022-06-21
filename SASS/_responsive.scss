@@ -51,6 +51,36 @@
             }
         }
     }
+    /* MQ Clientes */
+    .container__clientes {
+        & .galeria__clientes {
+            & .columna__clientes {
+                & img {
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+    /* MQ Nosotros */
+    .container__nosotros {
+        & .section__nosotros {
+            display: grid;
+            grid-template-areas: 
+            "imagenes"
+            "descripcion";
+            align-items: center;
+            justify-content: center;
+            & .section__descripcion {
+                font-size: 2.5vw;
+            }
+        }
+    }
+    /* MQ Contacto */
+    .container__contacto {
+        & .formulario__contacto {
+            width: 470px;
+        }
+    }
 }
 
 @media (max-width: 500px) {
@@ -123,5 +153,36 @@
             }
         }
     }
+    /* MQ Clientes */
+    .container__clientes {
+        & .galeria__clientes {
+            & .columna__clientes {
+                flex: 50%;
+                & .cliente {
+                    margin-left: 20%;
+                }
+            }
+        }   
+    }
+    /* MQ Nosotros */
+    .container__nosotros {
+        & .section__nosotros {
+            display: grid;
+            grid-template-areas: 
+            "imagenes"
+            "descripcion";
+            grid-template-columns: 98%;
+            align-items: center;
+            justify-content: center;
+            & .section__descripcion {
+                font-size: .9rem;
+            }
+        }
+    }
+    /* MQ Contacto */
+    .container__contacto {
+        & .formulario__contacto {
+            width: 400px;
+        }
+    }    
 }
-

@@ -8,7 +8,7 @@
   <meta name="description" content="Software de gestión integral para empresas o negocios, adaptable a la medida de sus requerimientos.">
   <meta name="keywords" content="software, empresa, negocio, gestion, integral, adaptable, confiable, requerimientos">
   <link rel="icon" type="image/jpeg" href="../Imagenes/Icono Tekno.jpeg">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../SASS/newstyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -40,38 +40,40 @@
     </nav>
   </header>
 
-  <div class="titulo__contacto">
-    <h2>Contacto</h2>
+  <div class="container__contacto">
+    <div class="titulo__contacto">
+      <h2>Contacto</h2>
+    </div>
+
+    <Form class="formulario__contacto" action="enviar.php" method="get" enctype="text/plain">
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" id="nombre" required>
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa">
+      <label for="telefono">Telefono</label>
+      <input type="tel" id="telefono">
+      <label for="email">Mail</label>
+      <input type="email" id="email" required>
+      <div class="seleccion__sistema">
+        <label for="Sistema">¿Cuenta actualmente con un sistema de gestión?</label>
+        <input type="radio" name="Sistema" value="1">Si
+        <input type="radio" name="Sistema" value="2">No
+      </div>
+      <label for="nombre-sistema">¿Cual?</label>
+      <input type="text" id="nombre-sistema">
+      <label for="Comentarios">Comentarios</label>
+      <textarea name="comentarios" id="comentarios" cols="70" rows="4"></textarea>
+      <div class="seleccion__novedades">
+        <label for="novedades">Deseo recibir información acerca de las novedades</label>
+        <input type="checkbox" id="novedades">
+      </div>
+      <div class="botones__formulario">
+        <input class="enviar__formulario" type="submit" value="Enviar">
+        <input class="resetear__formulario" type="reset" value="Borrar">
+      </div>
+    </Form>
   </div>
 
-  <Form class="formulario__contacto" action="enviar.php" method="get" enctype="text/plain">
-    <label for="nombre">Nombre y Apellido</label>
-    <input type="text" id="nombre" required>
-    <label for="empresa">Empresa</label>
-    <input type="text" id="empresa">
-    <label for="telefono">Telefono</label>
-    <input type="tel" id="telefono">
-    <label for="email">Mail</label>
-    <input type="email" id="email" required>
-    <div class="seleccion__sistema">
-      <label for="Sistema">¿Cuenta actualmente con un sistema de gestión?</label>
-      <input type="radio" name="Sistema" value="1">Si
-      <input type="radio" name="Sistema" value="2">No
-    </div>
-    <label for="nombre-sistema">¿Cual?</label>
-    <input type="text" id="nombre-sistema">
-    <label for="Comentarios">Comentarios</label>
-    <textarea name="comentarios" id="comentarios" cols="70" rows="4"></textarea>
-    <div class="seleccion__novedades">
-      <label for="novedades">Deseo recibir información acerca de las novedades</label>
-      <input type="checkbox" id="novedades">
-    </div>
-    <div class="botones__formulario">
-      <input class="enviar__formulario" type="submit" value="Enviar">
-      <input class="resetear__formulario" type="reset" value="Borrar">
-    </div>
-  </Form>
-  
   <footer class="footer">
     <h6 class="footer__leyenda">Tekno Software - Todos los derechos reservados</h6>
   </footer>
