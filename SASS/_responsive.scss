@@ -2,10 +2,18 @@
     .header {
         flex-direction: column;
     }
+    .container__index {
+        & .container__portada {
+            & .carousel__portada {
+                & img {
+                    height: 50vh;
+                }
+            }
+        }
+    }
     .main {
         & .main__titulo {
-            width: 28vw;
-            font-size: 3vw;
+            width: 15vw;
         }
     }
     /* MQ Caracteristicas */
@@ -100,7 +108,15 @@
             }
         }
     }
-
+    .container__index {
+        & .container__portada {
+            & .carousel__portada {
+                & img {
+                    height: 50vh;
+                }
+            }
+        }
+    }
     .main {
         & .main__titulo {
             width: 40vw;
